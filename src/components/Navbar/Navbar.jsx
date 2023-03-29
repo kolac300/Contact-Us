@@ -12,54 +12,57 @@ export default function Navbar() {
     <NavWrapper>
       <input
         ref={checkboxRef}
-        id="menu-toggle"
+        id="navigation-toggle"
         type="checkbox"
-        name="menu-toggle"
+        name="navigation-toggle"
       />
-      <label className="menu-button-container" htmlFor="menu-toggle">
-        <div className="menu-button"></div>
+      <label
+        className="navigation-button__container"
+        htmlFor="navigation-toggle"
+      >
+        <div className="navigation-button"></div>
       </label>
-      <ul className="menu">
-        <li className="logo">
+      <ul className="navigation-list">
+        <li className="navigation-logo navigation-list__element">
           {" "}
-          <h4>Logo Here</h4>
+          <h4 id='navigation-logo__content'>Logo Here</h4>
         </li>
-        <li>
+        <li className="navigation-list__element">
           {" "}
           <NavLink onClick={onCloseBurgerMenu} to="/">
             Home
           </NavLink>
         </li>
-        <li>
+        <li className="navigation-list__element">
           <NavLink onClick={onCloseBurgerMenu} to="/About">
             About
           </NavLink>
         </li>
-        <li>
+        <li className="navigation-list__element">
           <NavLink onClick={onCloseBurgerMenu} to="/Blog">
             Blog
           </NavLink>
         </li>
-        <li>
+        <li className="navigation-list__element">
           {" "}
           <NavLink onClick={onCloseBurgerMenu} to="/Shop">
             Shop
           </NavLink>
         </li>
-        <li>
+        <li className="navigation-list__element">
           {" "}
           <NavLink onClick={onCloseBurgerMenu} to="/Contact">
             Contact
           </NavLink>
         </li>
-        <li id="user">
+        <li className="navigation-list__element" id="navigation-svg__user">
           <NavLink onClick={onCloseBurgerMenu} to="/Profile">
             <ImgElipse>
               <img src={User} alt="user" />
             </ImgElipse>
           </NavLink>
         </li>
-        <li id="cart">
+        <li className="navigation-list__element" id="navigation-svg__cart">
           {" "}
           <NavLink onClick={() => onCloseBurgerMenu()} to="/Cart">
             {" "}

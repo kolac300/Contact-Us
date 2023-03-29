@@ -15,12 +15,12 @@ export default function Footer() {
   };
   return (
     <FooterWrapper>
-      <h1>Logo Here</h1>
+      <h1 className="Footer_logo">Logo Here</h1>
       <hr />
-      <div className="main_content">
+      <div className="Footer_content">
         <div>
           <h3>Reach us</h3>
-          <ul>
+          <ul className="Footer_content__contactsList"> 
             <li>
               <PhoneSVG /> <a href="tel:+1012 3456 789">+1012 3456 789</a>
             </li>
@@ -56,8 +56,8 @@ export default function Footer() {
           <p>Downloads</p>
           <p>Forum</p>
         </div>
-        <div className="form_wrapper">
-          <div className="form_content">
+        <div className="Footer_content__form__wrapper">
+          <div className="Footer_content__form__content">
             <Formik initialValues={initialValues} onSubmit={onSubmit}>
               <Form>
                 <h3>Join Our Newsletter</h3>

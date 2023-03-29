@@ -20,54 +20,52 @@ export default function ContactUsForm() {
     <ContactUsFormWrapper>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         <StyledForm>
-          <div className="from_header">
+          <div className="contacts-header">
             {" "}
-            <span>
+            <span className="contacts-header__el">
               <label htmlFor="fname">First Name</label>
               <Field type="text" name="fname" />
             </span>
-            <span>
+            <span className="contacts-header__el">
               <label htmlFor="lname">Last Name</label>
               <Field type="text" name="lname" id="lname" />
             </span>
-            <span>
+            <span className="contacts-header__el">
               <label htmlFor="mail">Email</label>
               <Field type="text" name="mail" id="mail" />
             </span>
-            <span>
+            <span className="contacts-header__el">
               {" "}
               <label htmlFor="phone">Phone Number</label>
               <Field type="text" name="phone" id="phone" placeholder="" />
             </span>
           </div>
-
-          <div className="form_footer">
+          <div className="contacts-middle">
             <p>Select Subject?</p>
-            <span className="radio_part">
-              <label className="radio">
+            <div className="contacts-middle__radioPart">
+              <label className="contacts-middle__radioPart__radio__el">
                 <Field type="radio" name="SelectSubject" value="1" />
-                <span className="radio-custom"></span>
+                <span className="contacts-middle__radio__custom"></span>
                 <span className="radio-label">General Inquiry</span>
               </label>
-              <label className="radio">
+              <label className="contacts-middle__radioPart__radio__el">
                 <Field type="radio" name="SelectSubject" value="2" />
-                <span className="radio-custom"></span>
+                <span className="contacts-middle__radio__custom"></span>
                 <span className="radio-label">General Inquiry</span>
               </label>
-              <label className="radio">
+              <label className="contacts-middle__radioPart__radio__el">
                 <Field type="radio" name="SelectSubject" value="3" />
-                <span className="radio-custom"></span>
+                <span className="contacts-middle__radio__custom"></span>
                 <span className="radio-label">General Inquiry</span>
               </label>
-              <label className="radio">
+              <label className="contacts-middle__radioPart__radio__el">
                 <Field type="radio" name="SelectSubject" value="4" />
-                <span className="radio-custom"></span>
+                <span className="contacts-middle__radio__custom"></span>
                 <span className="radio-label">General Inquiry</span>
               </label>
-            </span>
+            </div>
           </div>
-
-          <div className="message">
+          <div className="contacts-footer">
             {" "}
             <label htmlFor="message">Message</label>
             <Field

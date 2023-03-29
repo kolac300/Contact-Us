@@ -9,7 +9,7 @@ export const FooterWrapper = styled.div`
   padding-top: 80px;
   padding-bottom: 66px;
   margin-top: 50px;
-  h1 {
+  .Footer_logo {
     text-align: center;
     margin: 0 auto 44px auto;
   }
@@ -18,16 +18,16 @@ export const FooterWrapper = styled.div`
     margin: auto;
     margin-bottom: 19px;
   }
-  svg {
+  .Footer_content__contactsList svg {
     padding-right: 25px;
   }
-  li {
+  .Footer_content__contactsList li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 24px;
   }
-  ul,
-  a {
+  .Footer_content__contactsList,
+  .Footer_content__contactsList a {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -39,7 +39,7 @@ export const FooterWrapper = styled.div`
     line-height: 24px;
     color: white;
   }
-  .main_content {
+  .Footer_content {
     max-width: 1280px;
     margin: 0 auto 0 auto;
     padding: 0 1rem;
@@ -48,14 +48,14 @@ export const FooterWrapper = styled.div`
     box-sizing: border-box;
     @media screen and (max-width: 1050px) {
       grid-template-columns: 1fr 1fr;
-      .form_wrapper {
+      .Footer_content__form__wrapper {
         grid-column: 3/1;
       }
       gap: 0 20%;
     }
   }
 
-  .form_content {
+  .Footer_content__form__content {
     margin: auto;
     max-width: 320px;
     background-color: #131313;
@@ -65,7 +65,6 @@ export const FooterWrapper = styled.div`
     h3 {
       margin-bottom: 29px;
     }
-
     input {
       height: 43px;
       background-color: #1e1e1e;
@@ -95,11 +94,8 @@ export const FooterWrapper = styled.div`
 
   @media screen and (max-width: 490px) {
     padding-top: 19px;
-    hr {
-      width: 89%;
-      margin: auto;
-    }
-    h3 {
+
+    .Footer_content h3 {
       margin: 30px auto 20px auto;
       font-family: "Poppins";
       font-style: normal;
@@ -107,7 +103,7 @@ export const FooterWrapper = styled.div`
       font-size: 16px;
       line-height: 26px;
     }
-    a,
+    .Footer_content__contactsList a,
     p {
       font-family: "Poppins";
       font-style: normal;
@@ -116,12 +112,12 @@ export const FooterWrapper = styled.div`
       line-height: 18px;
       margin: 17px auto;
     }
-    svg,
-    li {
+    .Footer_content__contactsList li svg,
+    .Footer_content__contactsList li {
       display: block;
       margin-bottom: 12px;
     }
-    .form_content {
+    .Footer_content__form__content {
       padding: 14px;
       background-color: #0d0d0d;
       button {
@@ -132,10 +128,14 @@ export const FooterWrapper = styled.div`
       }
     }
 
-    h1 {
+    .Footer_logo {
       font-weight: 800;
       font-size: 36px;
       margin-bottom: 19px;
+    }
+    hr {
+      width: 89%;
+      margin: auto;
     }
   }
 `;

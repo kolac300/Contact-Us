@@ -32,10 +32,10 @@ export const ContactUsFormWrapper = styled.div`
     color: black;
   }
 
-  .radio_part {
+  .contacts-middle__radioPart {
     max-width: 520px;
     font-size: 12px;
-    .radio {
+    .contacts-middle__radioPart__radio__el {
       display: inline-flex;
       align-items: center;
       cursor: pointer;
@@ -44,11 +44,11 @@ export const ContactUsFormWrapper = styled.div`
       margin-right: 10px;
     }
 
-    .radio input[type="radio"] {
+    .contacts-middle__radioPart__radio__el input[type="radio"] {
       display: none;
     }
 
-    .radio-custom {
+    .contacts-middle__radio__custom {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -59,7 +59,9 @@ export const ContactUsFormWrapper = styled.div`
       margin-right: 8px;
     }
 
-    .radio input[type="radio"]:checked + .radio-custom {
+    .contacts-middle__radioPart__radio__el
+      input[type="radio"]:checked
+      + .contacts-middle__radio__custom {
       border-color: white;
       background-color: white;
       background-image: url(${checked});
@@ -75,21 +77,16 @@ export const ContactUsFormWrapper = styled.div`
       line-height: 20px;
     }
   }
-
-  @media screen and (max-width: 800px) {
-    display: block;
-    padding: 0;
-  }
 `;
 export const StyledForm = styled(Form)`
-  .from_header {
+  .contacts-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 7%;
     grid-row-gap: 15px;
   }
 
-  .form_footer {
+  .contacts-middle {
     margin-top: 45px;
     margin-bottom: 30px;
   }
@@ -125,20 +122,16 @@ export const StyledForm = styled(Form)`
       margin: auto;
     }
 
-    .radio_part {
+    .contacts-middle__radioPart {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 7%;
       grid-row-gap: 15px;
     }
-    .from_header {
+    .contacts-header {
       grid-template-columns: 1fr;
       margin-top: 30px;
       gap: 2%;
-    }
-    .form_footer {
-      p {
-      }
     }
   }
 `;

@@ -6,6 +6,7 @@ export const ContactWrapper = styled.div`
   box-sizing: border-box;
   display: grid;
   margin: auto;
+
   @media screen and (max-width: 1025px) {
     grid-template-columns: 1fr;
   }
