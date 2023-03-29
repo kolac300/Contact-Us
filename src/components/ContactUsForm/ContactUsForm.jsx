@@ -1,7 +1,6 @@
-import { Field, Formik, Form } from "formik";
+import { Field, Formik } from "formik";
 import React from "react";
-import { StyledForm } from "../../pages/styles/Contact.styled";
-import { ContactUsFormWrapper } from "./ContactUsForm.styled";
+import { ContactUsFormWrapper, StyledForm } from "./ContactUsForm.styled";
 
 export default function ContactUsForm() {
   const initialValues = {
@@ -38,12 +37,7 @@ export default function ContactUsForm() {
             <span>
               {" "}
               <label htmlFor="phone">Phone Number</label>
-              <Field
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="+380931010907"
-              />
+              <Field type="text" name="phone" id="phone" placeholder="" />
             </span>
           </div>
 

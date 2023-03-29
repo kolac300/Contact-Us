@@ -1,20 +1,18 @@
-
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import About from '../pages/About'
-import Blog from '../pages/Blog'
-import Cart from '../pages/Cart'
-import Contact from '../pages/Contact'
-import Features from '../pages/Features'
-import Home from '../pages/Home'
-import Profile from '../pages/Profile'
-import Shop from '../pages/Shop'
-import Navbar from './Navbar/Navbar'
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import About from "../pages/About";
+import Blog from "../pages/Blog";
+import Cart from "../pages/Cart";
+import Contact from "../pages/Contact";
+import Features from "../pages/Features";
+import Home from "../pages/Home";
+import Profile from "../pages/Profile";
+import Shop from "../pages/Shop";
+import Footer from "./Footer/Footer";
+import Navbar from "./Navbar/Navbar";
 
 export default function App() {
   return (
-
     <>
       <Navbar />
       <Routes>
@@ -27,9 +25,8 @@ export default function App() {
         <Route path="/Cart" element={<Cart />} />
         <Route path="/Profile" element={<Profile />} />
       </Routes>
+
+      <Footer />
     </>
-  )
+  );
 }
-
-
-

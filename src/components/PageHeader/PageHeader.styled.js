@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Page_Wrapper = styled.div`
+export const PageWrapper = styled.div`
 text-align: center;
 `
